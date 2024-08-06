@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nextjs-app
-        image: <docker-user-name>/nextjs-app
+        image: peterkinyua/nextjs-app
         ports:
         - containerPort: 3000
