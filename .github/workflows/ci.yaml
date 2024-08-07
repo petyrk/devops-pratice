@@ -23,6 +23,16 @@ jobs:
       with:
         node-version: 'v21.7.1' # Adjust this to the Node.js version your Next.js app requires
 
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.npm
+          ${{ github.workspace }}/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+
     - name: Install dependencies
       run: npm install
 
@@ -43,6 +53,16 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 'v21.7.1' # Adjust this to the Node.js version your Next.js app requires
+        
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.npm
+          ${{ github.workspace }}/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+        restore-keys: |
+          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
     - name: Install dependencies
       run: npm install
