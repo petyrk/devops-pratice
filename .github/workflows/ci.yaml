@@ -105,7 +105,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
 
     - name: Update tag in Helm chart
       run: |
@@ -113,8 +113,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "pk.peterirungu@gmail.com"
+        git config --global user.name "petyrk"
         git add helm/nextjs-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
