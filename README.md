@@ -122,7 +122,7 @@ After setting up the application, sync it to deploy your Next.js app to the Kube
 ``` bash
 argocd app sync nextjs-portfolio-app
 ```
-##  **Triggering the Pipeline **
+##  **Triggering the Pipeline**
 Once everything is set up, every push to the main branch of the repository will trigger the GitHub Actions CI pipeline. This will run the following steps:
 
 Install Dependencies: It installs the necessary dependencies for the Next.js app.
