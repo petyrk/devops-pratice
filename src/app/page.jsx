@@ -13,14 +13,19 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/hero.png" alt="" fill className="object-contain" />
-        </div>
+        {/* <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+          <Image src="/hero4.png" alt="" fill className="object-contain" />
+        </div> */}
+
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative m-4 rounded-xl">
+            <Image src="/hero2.png" alt="" fill className="object-contain rounded-2xl" />
+          </div>
+
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold">
-            Networking Excellence, Building Tomorrow&#39;s IP Networks.
+            Dev Ops  Excellence, Building Tomorrow&#39;s Cloud Networks.
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
