@@ -4,7 +4,7 @@ image:
   repository: peterkinyua/nextjs-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "12218847453"
+  tag: "12224496914"
 
 ingress:
   enabled: false
