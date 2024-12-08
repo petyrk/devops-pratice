@@ -1,5 +1,5 @@
 # CI/CD Pipeline for Deploying Next.js Portfolio App on Kubernetes 🚀
-
+![Alt text](image.png)
 This project sets up a **CI/CD pipeline** to automatically build, test, and deploy a **Next.js** portfolio application to a **Kubernetes** cluster using **GitHub Actions**, **Docker**, **Helm**, and **Argo CD**. The entire pipeline automates the process from code push to deployment, ensuring that the latest changes are always deployed and running on the Kubernetes cluster.
 
 ---
@@ -131,17 +131,20 @@ Build Docker Image: Builds a Docker image of the app.
 Push to Docker Hub: Pushes the Docker image to Docker Hub.
 Update Helm Chart: Updates the values.yaml in the Helm chart with the new image tag.
 Deploy with Argo CD: Argo CD automatically detects the change and deploys the new image to Kubernetes.
-Screenshot Placeholder:
-P showing the GitHub Actions workflow running successfully, with logs showing build, test, and Docker push.
 
-Screenshot Placeholder:
-showing the Argo CD UI with the app deployment triggered and synced successfully.
 
-Screenshots: CI/CD Pipeline in Action
+GitHub Actions workflow running successfully, with logs showing build, test, and Docker push.
+![Alt text](image-3.png)
+![Alt text](image-5.png)
+Argo CD UI with the app deployment triggered and synced successfully.
+![Alt text](image-4.png)
+CI/CD Pipeline in Action
 GitHub Actions Workflow:
 
 Argo CD Sync:
-
+![Alt text](image-2.png)
+![Alt text](image-1.png)
+![Alt text](image-6.png)
 ##  **Conclusion**
 This setup allows you to automate the deployment of a Next.js portfolio application to a Kubernetes cluster using a CI/CD pipeline. By using GitHub Actions for continuous integration and Argo CD for continuous delivery, you ensure that the application is always up-to-date with the latest code changes, while Helm simplifies the Kubernetes deployment process.
 
