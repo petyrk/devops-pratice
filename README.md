@@ -111,8 +111,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 Sync Argo CD Application:
 
 After setting up the application, sync it to deploy your Next.js app to the Kubernetes cluster.
+![Alt text](image-5.png)
 
-![Alt text](image-3.png)
 
 ## **Triggering the Pipeline**
 Once everything is set up, every push to the main branch of the repository will trigger the GitHub Actions CI pipeline. This will run the following steps:
@@ -126,8 +126,8 @@ Deploy with Argo CD: Argo CD automatically detects the change and deploys the ne
 
 
 GitHub Actions workflow running successfully, with logs showing build, test, and Docker push.
+![Alt text](image-3.png)
 
-![Alt text](image-5.png)
 Argo CD UI with the app deployment triggered and synced successfully.
 ![Alt text](image-4.png)
 CI/CD Pipeline in Action
