@@ -106,15 +106,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 ## **Create an Argo CD Application**
 
-Connect Argo CD to the GitHub repository where your code resides.
+![image](https://github.com/user-attachments/assets/222469d0-8205-4425-a2b9-b7e7da9734ca)
 
-``` bash
-argocd app create nextjs-portfolio-app \
-  --repo https://github.com/your-repo/nextjs-portfolio-app.git \
-  --path helm \
-  --dest-server https://kubernetes.default.svc \
-  --dest-namespace default
-```
 Sync Argo CD Application:
 
 After setting up the application, sync it to deploy your Next.js app to the Kubernetes cluster.
