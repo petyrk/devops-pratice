@@ -141,7 +141,4 @@ Argo CD Sync:
 ##  **Conclusion**
 This setup allows you to automate the deployment of a Next.js portfolio application to a Kubernetes cluster using a CI/CD pipeline. By using GitHub Actions for continuous integration and Argo CD for continuous delivery, you ensure that the application is always up-to-date with the latest code changes, while Helm simplifies the Kubernetes deployment process.
 
-By using Docker, you ensure that the app runs in a consistent environment across all stages of the pipeline, whether it's local development or production.
-
-With everything automated, you can now focus on writing new features and making improvements to your portfolio app while the pipeline handles the rest!
 
